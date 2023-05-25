@@ -1,0 +1,95 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Cadastro de Produtos</title>
+      <link rel="stylesheet" type="text/css" href="cadastrodp.css">
+  
+    
+    </head>
+    <style>
+       #PR1{
+ text-align: center;   
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ font-size: larger;
+ color: white;
+ padding: 5px;
+ background-color:rgb(187, 5, 5) ;
+}
+    </style>
+    <body style="background-color: rgb(187, 5, 5); ;">
+      <div style="text-align: left; background-color: #fbb41c;" >
+        <img class="log" src="fotos/logo.png" width="400" height="350" alt="logo">
+    </div>
+    <header style=" background-color: #fbb41c; ">
+        <nav>
+            <ul>
+                <li> <a href="LANCHE.HTML">HOME</a></li>       
+                <li> <a href="CADASTRODPD.HTML">CADASTRO DE PRODUTOS</a> </li>
+                <li> <a href="sobrenos.html">SOBRE NÓS</a></li>    
+               
+                <li> <a href="lanches.html">CARDÁPIO</a></li>                  
+            </ul>
+        </nav>
+    </header>
+    
+    <div style="background-color: rgb(187, 5, 5); ">      
+      <h1 style="color: white;   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Cadastro de Produtos</h1>
+      <form id="cadastro-form">
+        <div class="cd">
+          <label for="produto">Produto:</label>
+          <input type="text" id="produto" name="produto" required>
+        </div>
+        <div class="cd">
+         Marca: <select name="marca" id="marca" required="">
+          <option value="mc1">Selecione</option>
+          <option value="mc2"> Parmê </option>
+          <option value="mc3"> Coca-cola </option>
+          <option value="mc4"> Pepsi </option>
+          <option value="mc5"> Pizza Hut </option>]
+          <option value="mc6"> Fanta </option>
+          </select>
+          
+        </div>
+        <div class="cd">
+          <label for="preco_custo">Preço de custo:</label>
+          <input type="number" id="preco_custo" name="preco_custo" min="0" step="0.01" required>
+        </div >
+        <div class="cd">
+          <label for="percentual_lucro">Percentual de lucro:</label>
+          <input type="number" id="percentual_lucro" name="percentual_lucro" min="0" step="0.01" required>
+        </div>
+        <div class="cd">
+          <label for="preco_venda">Preço de venda:</label>
+          <input type="number" id="preco_venda" name="preco_venda" min="0" step="0.01" required>
+        </div>
+        <div class="cd">
+          <label for="quantidade">Quantidade:</label>
+          <input type="number" id="quantidade" name="quantidade" min="0" required>
+        </div>
+        <div class="cd">
+          <label for="imagem">Imagem:</label>
+          <input type="file" id="imagem" name="imagem" accept="image/*" required>
+        </div>
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+
+    <center>
+
+    <script src="cor.js"></script>
+    <h1>Mudar cor de fundo</h1>
+    <button id="botao" onclick="mudarCor()">Mudar cor</button>
+
+    <script src="cor.js"></script>
+</center>
+
+   
+         <footer>
+            <p  id="PR1"> Contatos </p>
+            <p  id="PR1"> 11 222 555 66</p>
+            <p  id="PR1"> 21 222 555 66</p>
+          </footer>
+</body>
+</html>
